@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <title>Delhi Public Liberary</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0 ">
+  <link rel="shortcut icon" type="image/jpg" href="./images/qa.jpg">
+  <link rel="stylesheet" type="text/css" href="./css/style.css">
+</head>
+
+<body>
+
+  <header>
+
+    <nav class="navbar">
+      <span class="ham">
+        <a href="#" class="btn" onclick="opensidemenu()">
+          <svg height="30" width="30">
+            <path d="M0,5 30,5" stroke="white" stroke-width="5" />
+            <path d="M0,14 30,14" stroke="white" stroke-width="5" />
+            <path d="M0,23 30,23" stroke="white" stroke-width="5" />
+          </svg>
+        </a>
+      </span>
+    </nav>
+    
+    <div id="branding">
+      <h1><span class="highlight"><a href="index.html">Delhi</a></span> Public Liberary</h1>
+    </div>
+  
+    
+    <div id="sidemenu">
+      <a href="#" class="btn-close" onclick="closesidemenu()">&times</a>
+      <a href="index.html" >Home</a>
+      <a href="aboutUs.html" >About Us</a>
+      <a href="services.html">services</a>
+    </div>
+  </header>
+
+    <section id="showcase">
+      <div class="container ">
+        <h2>Free Public Liberary</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+      </div>
+    </section>
+
+    <section id="main">
+      <div class="container">
+        <p>
+        <h1>Newsletter</h1>
+        </p>
+        <form>
+          <input type="Email" name="Email" placeholder="Enter your Email">
+          <button type="submit" class="button_1">Subscribe</button>
+        </form>
+      </div>
+    </section>
+
+    <section id="boxes">
+      <div class="container">
+        <div class="box">
+          <img src="./images/english.jpg">
+          <h3>English</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          </p>
+        </div>
+
+        <div class="box">
+          <img src="./images/math.jpg">
+          <h3>Mathematics</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          </p>
+        </div>
+
+        <div class="box">
+          <img src="./images/science.jpg">
+          <h3>Science</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          </p>
+        </div>
+      </div>
+    </section>
+  <footer id="main-footer">
+    <div class="container">
+      <p>Delhi Public Liberary Copyright&copy, 2022</p>
+    </div>
+  </footer>
+  <!-- Java Script -->
+  <script>
+    function opensidemenu() {
+      document.getElementById('sidemenu').style.width = "250px";
+      document.getElementById('rest').style.marginleft = "250px";
+    }
+    function closesidemenu() {
+      document.getElementById('sidemenu').style.width = "0px"
+      document.getElementById('rest').style.marginleft = "0px";
+    }
+
+  </script>
+  <!-- Js End -->
+
+</body>
+
+</html>
